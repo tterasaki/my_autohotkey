@@ -1,0 +1,24 @@
+^f::Send "{Right}"  
+^b::Send "{Left}"   
+^p::Send "{Up}"     
+^n::Send "{Down}"
+
+^r:: {
+    Hotkey("^f", "", "Off")  ;
+    Send("^f")               ;
+    Hotkey("^f", "", "On")   ;
+}
+
+
+^Space::Send "{vkF3sc029}"
+
+^a::Send "{Home}"
+^e::Send "{End}"
+^k::
+{
+    Send "{Shift Down}{End}{Shift Up}"  ; 
+    Send "^x"                           ; 
+}
+
+^h::Send "{Backspace}"
+^d::Send "{Delete}"
